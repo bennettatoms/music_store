@@ -1,0 +1,12 @@
+<% provide(:title, 'Albums') %>
+
+<h1>Albums</h1>
+
+<ul>
+<% @albums.each do |album| %>
+  <li><strong><% album.name %></strong></li>
+  <li><% album.artist %></li>
+  <li><% album.genre %></li>
+  <li>$<% album.price.to_s %></li>
+<% end %>
+</ul>  
